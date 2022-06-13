@@ -17,8 +17,11 @@ const state = reactive({
   }
 });
  
+const { data } = await useFetch('/api/bugs');
+ 
 function generateBug() {
-  console.log('Hello, you clicked a button')
+  console.log(data);
+  state.bugDetails = data.value[Math.floor(Math.random() * data.value.length)];
 }
  
 </script>
