@@ -1,7 +1,9 @@
 <template>
-  <div id="nav">
-    <NuxtLink to="/">Home</NuxtLink>
-    <NuxtLink to="/generate">Bug Generator</NuxtLink>
+  <div>
+    <div id="nav">
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/generate">Bug Generator</NuxtLink>
+    </div>
     <NuxtPage />
   </div>
 </template>
